@@ -34,11 +34,13 @@ class Televisao():
             self.canal = self.canal - 1
 
     def digitarCanal(self, canal):
-        self.canal = canal
+        if canal > 0:
+            self.canal = canal
 
     def som(self):
         if self.mute == False and self.volume > 0:
             return "som saindo da televisão"
+        return "televisão sem som"
 
     def getInfo(self):
         return self.canal."informações da programação atual"
