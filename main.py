@@ -94,9 +94,9 @@ class Controle():
         self.televisao.canalMenos()
 
     def digitarCanal(self, numero, canal=None):
-        canal = f"{canal}{numero}"
+        canal = f"{canal}" + f"{numero}"
         while "digitarem outro numero em menos de 5 segundos após o anterior":
-            canal = f"{canal}{numero}"
+            canal = f"{canal}" + f"{numero}"
         self.televisao.numeroCanal(canal)
 
     def numero1(self):
