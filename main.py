@@ -21,10 +21,12 @@ class Televisao():
     def volumeMais(self):
         if self.volume < 100:
             self.volume = self.volume + 1
+        self.mute = False
 
     def volumeMenos(self):
         if self.volume > 0:
             self.volume = self.volume - 1
+        self.mute = False
 
     def canalMais(self):
         self.canal = self.canal + 1
@@ -43,4 +45,4 @@ class Televisao():
         return "televisão sem som"
 
     def getInfo(self):
-        return self.canal."informações da programação atual"
+        return self.canal #."informações da programação atual"
