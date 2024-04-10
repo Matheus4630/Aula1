@@ -58,7 +58,7 @@ class Televisao():
         return "televisão sem som"
 
     def informacao(self):
-        return f"Canal: {self.canal}, Volume: {self.volume}, (programação atual do self.canal)"
+        return f"Canal: {self.canal}, Volume: {self.volume}, mute: {self.som()}, (programação atual do self.canal)"
 
 
 class Controle():
